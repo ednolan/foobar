@@ -9,5 +9,10 @@ on:
       - main
 
 jobs:
+  permissions:
+    contents: read
+    checks: write
+    issues: write
+    pull-requests: write
   pre-commit:
     uses: bemanproject/infra-workflows/.github/workflows/reusable-beman-pre-commit.yml@1.4.1
