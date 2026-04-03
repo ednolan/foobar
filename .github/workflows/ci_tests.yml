@@ -9,7 +9,7 @@ on:
   pull_request:
   workflow_dispatch:
   schedule:
-    - cron: '30 15 * * 6'
+    - cron: '56 14 * * 1'
 
 jobs:
   beman-submodule-check:
@@ -31,7 +31,7 @@ jobs:
         ]
 
   build-and-test:
-    uses: bemanproject/infra-workflows/.github/workflows/reusable-beman-build-and-test.yml@1.4.1
+    uses: bemanproject/infra-workflows/.github/workflows/reusable-beman-build-and-test.yml@enolan_coverageempty1
     with:
       matrix_config: >
         {
