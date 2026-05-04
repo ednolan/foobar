@@ -1,0 +1,22 @@
+{
+  "name": "beman-my-project-name",
+  "version-semver": "@VERSION@",
+  "description": "Short project description.",
+  "homepage": "https://github.com/bemanproject/my_project_name",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ],
+  "features": {
+    "modules": {
+      "description": "Provide beman.my_project_name as a C++ module"
+    }
+  }
+}
